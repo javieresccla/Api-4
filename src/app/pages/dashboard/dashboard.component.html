@@ -1,0 +1,10 @@
+<div *ngIf="picturesList.length != 0; else noResponseYet">
+    <div fxLayoutAlign="center" fxLayoutGap="25px grid" fxLayout="row wrap" fxLayout.lt-md="column">
+        <div *ngFor="let picture of picturesList" fxFlex="33.3">
+            
+        </div>
+    </div>
+</div>
+<ng-template #noResponseYet>
+    <app-spinner></app-spinner>
+</ng-template>
